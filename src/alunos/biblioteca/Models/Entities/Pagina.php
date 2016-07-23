@@ -27,6 +27,11 @@
         * @Column(type="integer", nullable=false, name="Posicao")
         */
         public $Posicao;
+         
+        /**
+        * @Column(type="datetime", nullable=false, name="DataHoraUpdate")
+        */
+        public $DataHoraUpdate;
         
         public function getId(){
             return $this->Id;
@@ -42,6 +47,10 @@
         
         public function getPagina(){
             return $this->Pagina;
+        }
+        
+        public function getDataHoraUpdate(){
+            return $this->DataHoraUpdate;
         }
     }
 ?>
