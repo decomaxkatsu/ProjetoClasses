@@ -4,8 +4,7 @@
 
     use Silex\Application;
     use Silex\ControllerProviderInterface;
-    use Symfony\Component\HttpFoundation\Request;
-    use Symfony\Component\HttpFoundation\Response;
+    use alunos\biblioteca\Models\Pagina\Pagina;
 
 
     class frontController implements ControllerProviderInterface{

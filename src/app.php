@@ -11,4 +11,7 @@
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
         'twig.path' => __DIR__.'/../resources'
     ));
+    
+    // Chama a DOTENV onde se obtem as configuracoes do projeto
+    (new Dotenv\Dotenv(__DIR__.'/../'))->load();    
 ?>
